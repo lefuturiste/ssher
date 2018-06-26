@@ -28,6 +28,7 @@
     "colors": "^1.3.0",
     "commander": "^2.15.1",
     "exec-stream": "^0.1.0",
+    "global-dirs": "^0.1.1",
     "runscript": "^1.3.0"
   }
 }

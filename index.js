@@ -18,7 +18,8 @@ app
   .description("Get the path of the config file")
   .action(function (context) {
     const path = require('path')
-    var absolute = path.resolve('./config.json')
+    const globalDirs = require('global-dirs');
+    var absolute = globalDirs.npm.packages + "/ssher/data.json"
     console.log(absolute);
     if (context.clipboard) {
       const clipboardy = require("clipboardy");
