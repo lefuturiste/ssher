@@ -10,7 +10,7 @@ if (process.argv.length == 2) {
 }
 
 app
-  .version('1.1.6')
+  .version('1.1.7')
 
 app
   .command('config-file-path')
