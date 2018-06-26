@@ -1,7 +1,7 @@
 {
   "name": "ssher",
   "version": "1.0.0",
-  "description": "Ssher allow to manage you ssh connections",
+  "description": "A cool tiny tool to save your ssh profiles and use it",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
