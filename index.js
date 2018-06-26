@@ -28,17 +28,17 @@ app
       if (context.clipboard) {
         const clipboardy = require("clipboardy");
         clipboardy
-            .write(cmd)
-            .then(() => {
-              console.log(colors.bgBlack(colors.cyan("Copied to clipboard")));
-              process.exit();
-            })
-            .catch(err => {
-              console.log(colors.bgBlack(colors.yellow("Failed to copy to clipboard")));
-              console.error(err.message);
-              process.exit(1);
+          .write(cmd)
+          .then(() => {
+            console.log(colors.bgBlack(colors.cyan("Copied to clipboard")));
+            process.exit();
+          })
+          .catch(err => {
+            console.log(colors.bgBlack(colors.yellow("Failed to copy to clipboard")));
+            console.error(err.message);
+            process.exit(1);
           });
-      }else{
+      } else {
         console.log(colors.bgBlack(colors.cyan(colors.bold((`Connecting to ssh server...`)))))
         const runScript = require('runscript');
 
