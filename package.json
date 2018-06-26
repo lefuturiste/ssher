@@ -13,7 +13,8 @@
     "ssher"
   ],
   "files": [
-    "index.js"
+    "index.js",
+    "data.json"
   ],
   "bin": {
     "ssher": "index.js",

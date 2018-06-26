@@ -13,6 +13,30 @@ app
   .version('1.1.4')
 
 app
+  .command('config-file-path')
+  .option('-c, --clipboard', 'Copy path to clipboard')
+  .description("Get the path of the config file")
+  .action(function (context) {
+    const path = require('path')
+    var absolute = path.resolve('./config.json')
+    console.log(absolute);
+    if (context.clipboard) {
+      const clipboardy = require("clipboardy");
+      clipboardy
+        .write(absolute)
+        .then(() => {
+          console.log(colors.bgBlack(colors.cyan("Copied to clipboard")));
+          process.exit();
+        })
+        .catch(err => {
+          console.log(colors.bgBlack(colors.yellow("Failed to copy to clipboard")));
+          console.error(err.message);
+          process.exit(1);
+        });
+    }
+  })
+
+app
   .command('connect <name>')
   .option('-c, --clipboard', 'Copy command to clipboard')
   .description("Connect to a session defined in the config file")
