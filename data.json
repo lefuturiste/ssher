@@ -1,0 +1,11 @@
+{
+  "sessions": [
+    {
+      "name": "example",
+      "host": "srv02.cluster.lefuturiste.fr",
+      "port": "22",
+      "username": "root",
+      "password": "G6oeHu9rFEQDCR84DWuw"
+    }
+  ]
+}

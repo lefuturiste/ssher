@@ -1,0 +1,32 @@
+{
+  "name": "ssher",
+  "version": "1.0.0",
+  "description": "Ssher allow to manage you ssh connections",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cli-app",
+    "cli",
+    "ssh",
+    "ssher"
+  ],
+  "files": [
+    "index.js"
+  ],
+  "bin": {
+    "ssher": "index.js",
+    "er": "index.js"
+  },
+  "repository": "lefuturiste/ssher",
+  "author": "lefuturiste <contact@lefuturiste.fr>",
+  "license": "MIT",
+  "dependencies": {
+    "clipboardy": "^1.2.3",
+    "colors": "^1.3.0",
+    "commander": "^2.15.1",
+    "exec-stream": "^0.1.0",
+    "runscript": "^1.3.0"
+  }
+}
