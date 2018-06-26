@@ -10,7 +10,7 @@ if (process.argv.length == 2) {
 }
 
 app
-  .version('0.0.1')
+  .version('1.1.4')
 
 app
   .command('connect <name>')
