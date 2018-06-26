@@ -38,6 +38,16 @@ app
   })
 
 app
+  .command('list')
+  .description("List all profiles")
+  .action(function (name, context) {
+    console.log(colors.bgBlack(colors.magenta(colors.bold((`  ${data.sessions.length} item(s)`)))))
+    data.sessions.forEach((item) => {
+      console.log(`- ${item.name}: ${item.username}@${item.host}:${item.port}`);
+    })
+  })
+
+app
   .command('connect <name>')
   .option('-c, --clipboard', 'Copy command to clipboard')
   .description("Connect to a session defined in the config file")
