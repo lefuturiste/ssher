@@ -8,8 +8,8 @@ A cool tiny tool to save your ssh profiles and use it.
 
 This cli app require sshpass:
 
-- Debian based distributions: `# apt install ssher`
-- Archlinux: `# pacman -S ssher`
+- Debian based distributions: `# apt install sshpass`
+- Archlinux: `# pacman -S sshpass`
 
 ### Via npm
 
