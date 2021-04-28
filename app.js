@@ -2,13 +2,17 @@
 
 'use strict'
 
-const version = require('./package.json').version
-
 const app = require('commander')
 const colors = require('colors')
 const configPath = __dirname + '/config.json'
-const config = require(configPath)
+const version = require('./package.json').version
 const fs = require('fs')
+
+if (!fs.existsSync(configPath)) {
+  fs.copyFileSync(configPath.replace('.json', '.example.json'), configPath)
+}
+
+const config = require(configPath)
 
 const saveConfig = newConfig => {
   fs.writeFileSync(configPath, JSON.stringify(newConfig, null, 2))

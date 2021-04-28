@@ -1,6 +1,6 @@
 {
   "name": "ssher",
-  "version": "1.2",
+  "version": "1.2.1",
   "description": "A cool tiny tool to manage your ssh profiles.",
   "main": "app.js",
   "scripts": {
@@ -14,7 +14,7 @@
   ],
   "files": [
     "app.js",
-    "data.json"
+    "config.example.json"
   ],
   "bin": {
     "ssher": "app.js"
