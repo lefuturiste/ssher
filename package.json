@@ -1,8 +1,8 @@
 {
   "name": "ssher",
-  "version": "1.1.8",
-  "description": "A cool tiny tool to save your ssh profiles and use it",
-  "main": "index.js",
+  "version": "1.2",
+  "description": "A cool tiny tool to manage your ssh profiles.",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -13,12 +13,11 @@
     "ssher"
   ],
   "files": [
-    "index.js",
+    "app.js",
     "data.json"
   ],
   "bin": {
-    "ssher": "index.js",
-    "er": "index.js"
+    "ssher": "app.js"
   },
   "repository": "lefuturiste/ssher",
   "author": "lefuturiste <contact@lefuturiste.fr>",
@@ -26,9 +25,8 @@
   "dependencies": {
     "clipboardy": "^1.2.3",
     "colors": "^1.3.0",
-    "commander": "^2.15.1",
-    "exec-stream": "^0.1.0",
-    "global-dirs": "^0.1.1",
+    "commander": "^7.2.0",
+    "prompts": "^2.4.1",
     "runscript": "^1.3.0"
   }
 }

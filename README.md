@@ -23,4 +23,4 @@ This cli app require sshpass:
 
 ## Configuration
 
-Edit the `data.json` to change the profiles.
+Edit the `config.json` file to add/edit the profiles.

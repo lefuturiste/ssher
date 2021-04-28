@@ -1,5 +1,5 @@
-  {
-  "sessions": [
+{
+  "profiles": [
     {
       "name": "example",
       "host": "yourhost.com",
