@@ -23,7 +23,7 @@
   "author": "lefuturiste <contact@lefuturiste.fr>",
   "license": "MIT",
   "dependencies": {
-    "clipboardy": "^1.2.3",
+    "clipboardy": "^4.0.0",
     "colors": "^1.3.0",
     "commander": "^7.2.0",
     "prompts": "^2.4.1",
